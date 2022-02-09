@@ -6,3 +6,5 @@ ADD ./ /app
 
 RUN mkdir /out && \
     go build .
+    
+CMD [ "/bin/bash", "-ce", "tail -f /dev/null" ]
